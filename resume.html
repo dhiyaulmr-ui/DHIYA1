@@ -246,6 +246,18 @@ span {
 </style>
   </head>
   <body class="d-none">
+  <audio id="bgm" loop>
+    <source src="mp3/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <button onclick="playMusic()">Play Music</button>
+
+  <script>
+    function playMusic() {
+      document.getElementById("bgm").play();
+    }
+  </script>
+</body>
     <section id="app" class="container-fluid">
       <header class="header position-relative">
         <animatable-component autoplay animation="fadeInDownBig"  easing="ease-in-out" duration="1200">

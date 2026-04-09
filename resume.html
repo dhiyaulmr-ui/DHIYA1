@@ -292,7 +292,7 @@ span {
             </animatable-component>
             <animatable-component
               autoplay
-              animation="fade-in-left"
+              animation="fadeInLeft"
               easing="ease-in-out"
               duration="1200"
             >
@@ -306,7 +306,7 @@ span {
           </div>
           <div v-if="!!photo" class="col-auto d-none d-lg-block d-print-block">
             <animatable-component autoplay animation="rotateIn" easing="ease-in" duration="1200">
-              <img v-bind:src.prop="photo" class="photo border border-2 border-dark rounded-circle img-fluid float-end img-thumbnail">
+              <img :src="photo" class="photo border border-2 border-dark rounded-circle img-fluid float-end img-thumbnail">
             </animatable-component>
           </div>
         </div>
@@ -424,7 +424,7 @@ span {
           <div class="col col-8">
             <animatable-component
               autoplay
-              animation="fade-in-right"
+              animation="fadeInRight"
               easing="ease-in-out"
               duration="1200"
             >
@@ -440,7 +440,7 @@ span {
             <!--              ---->
             <animatable-component
               autoplay
-              animation="fade-in-right"
+              animation="fadeInRight"
               easing="ease-in-out"
               duration="1200"
             >
@@ -482,7 +482,7 @@ span {
 <!--              ---->
                       <animatable-component
               autoplay
-              animation="fade-in-right"
+              animation="fadeInRight"
               easing="ease-in-out"
               duration="1200"
             >

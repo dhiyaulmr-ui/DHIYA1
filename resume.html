@@ -304,7 +304,7 @@ span {
               </p>
              </animatable-component>
           </div>
-          <div v-if="!!photo" class="col-auto d-none d-lg-block d-print-block">
+          <div v-if="photo" class="col-auto d-none d-lg-block d-print-block">
             <animatable-component autoplay animation="rotateIn" easing="ease-in" duration="1200">
               <img :src="photo" class="photo border border-2 border-dark rounded-circle img-fluid float-end img-thumbnail">
             </animatable-component>
@@ -573,7 +573,7 @@ const resume = {
     {
       jobTitle: 'Psychology student assistant',
       startDate: 'May 2024',
-      endDate: 'Agust 2025',
+      endDate: 'August 2025',
       employer: 'Volunteer',
       achievements: [        
         'Assisted in organizing psychoeducation programs and seminars.',
@@ -616,7 +616,6 @@ const formatResume = (r) => ({
   address: [
     r.country,
     r.city,
-    r.postalCode
   ].filter(Boolean).join(', ')
 })
 
